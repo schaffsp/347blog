@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <h1 class="post_title">CSS Animations</h1>
+    <p class="post_subtitle">Week 2, 9/9/2021</p>
+    <p>This week we began using CSS in class, though I had used it previously. I decided to use CSS as the basis for
+        this week's blog post as I wanted to learn more about animations and backgrounds. Before I felt like I had only
+        barely touched the surface of what could be done with CSS, and after doing some reaseach I still feel that way.
+        I decided to change out the boring one color background and replace it with an animated gradient.
+    </p>
+    <p>Inside the body of my stylesheet I put the following.</p>
+    <blockquote>background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);</blockquote>
+    <p>This creates the gradient and tilts it at a 45 degree angle. The hex values are just the colors of the gradient.
+    </p>
+    <blockquote>background-size: 400% 400%;<br>
+        animation: gradient 25s ease infinite;
+    </blockquote>
+    <p>These lines make the gradient much bigger than the actual page and trigger the animation below. The animation is
+        set to loop, and I picked 25 seconds as a nice and slow timeframe.</p>
+    <blockquote>0% {<br>
+            &emsp; background-position: 0% 50%;<br>
+        }<br>
+        50% {<br>
+            &emsp; background-position: 100% 50%;<br>
+        }<br>
+        100% {<br>
+            &emsp; background-position: 0% 50%;<br>
+        }
+    </blockquote>
+    <p>Here are some of the sources I used:<br>
+        https://css-tricks.com/a-complete-guide-to-css-gradients/<br>
+        https://www.tutorialscan.com/css/css-gradient-background/
+    </p>
+
+
+    <a class="symbol" href="../index.html">
+        <h3>&lt; Return</h3>
+    </a>
+</body>
+
+</html>

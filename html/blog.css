@@ -1,3 +1,77 @@
+<<<<<<< HEAD
+* {
+    /*background-color: #313b3f; */
+    color: #f1fbff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+blockquote {
+  font-weight: bold;
+}
+
+
+.post_title {
+    font-size: 2.7em;
+    margin-bottom: 0px;
+}
+
+.post_subtitle {
+    margin-top: 0px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.return_link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.symbol {
+    text-decoration: none;
+    position: relative;
+    font-size: 1em;
+    transition: .5s;
+}
+
+  .symbol::before {
+    text-decoration: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+
+  .symbol:hover::before {
+    transform: scale(1.1); 
+  }
+
+  .symbol:hover {
+    color: #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+=======
 * {
     background-color: #313b3f;
     color: #f1fbff;
@@ -47,4 +121,5 @@
   .symbol:hover {
     color: #ffee10;
     text-shadow: 0 0 5px #ffee10;
+>>>>>>> 4fce179f984098313aee40f51c739acc88595965
   }
