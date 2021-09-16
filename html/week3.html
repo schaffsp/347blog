@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="week3.css">
+</head>
+
+<body>
+    <h1 class="post_title">CSS Animations Continued</h1>
+    <p class="post_subtitle">Week 3, 9/16/2021</p>
+    <p>This week I decided to continue with CSS animations. We learned flexboxes this week, but I felt as though I could
+        not do anything more interesting with them than what we did in class so I continued with my efforts from last
+        week.</p>
+    <p>While the gradient background was cool last week, I felt as if it had readability issues and may be espicially
+        bad for those with accesibiliy concerns which is why I am removing it from subsequent blog posts.</p>
+    <p>I like the idea of having some sort of animation for when the page loads, while the one I added to this page is
+        really simple I feel as if it demonstrates the concept.</p>
+    <blockquote>animation: fadeInAnimation ease 2s;<br>
+        animation-iteration-count: 1;<br>
+        animation-fill-mode: forwards;</blockquote>
+    <p>I added the above lines to the body tag of my css file. I thought I was going to have to play with the '::before'
+        attribute but it was really just a simple animation played once. The animation looks like this:</p>
+    <blockquote>
+        @keyframes fadeInAnimation {<br>
+        &emsp;0% {<br>
+        &emsp;&emsp;opacity: 0;<br>
+        &emsp;}<br>
+        &emsp;100% {<br>
+        &emsp;&emsp; opacity: 1;<br>
+        &emsp;}<br>
+        }
+    </blockquote>
+    <p>https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/<br>https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-enhance-a-page-with-css-animations--cms-32100
+    </p>
+    <a class="symbol" href="../index.html">
+        <h3>&lt; Return</h3>
+    </a>
+</body>
+
+</html>
