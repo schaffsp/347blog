@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="week5.css">
+</head>
+
+<body>
+    <h1 class="post_title">React</h1>
+    <p class="post_subtitle">Week 7, 11/04/2021</p>
+    <p>This week we started using React JS. The component system is really useful and makes things more dynamic. Also,
+        the code duplication that was sometimes nessecary in static HTML / CSS is no longer needed with React.</p>
+    <p>Components are powerful, and are made even more so by the parameters they can be passed called props.
+        Unfortunatley, React does not have built in type safety (that I know of), so I decided to look up an
+        alternative. What I found is called PropTypes, and is imported like so:</p>
+    <blockquote>import PropTypes from 'prop-types';</blockquote>
+    <p>You can replace this example React component with one of your own:</p>
+    <blockquote>
+        class Example extends React.Component {<br>
+        &emsp; render() {<br>
+        &emsp;&emsp; return (<br>
+        &emsp;&emsp;&emsp; &lt;h1&gt;My name is {this.props.name}&lt;/h1&gt;<br>
+        &emsp;&emsp; );<br>
+        &emsp; }<br>
+        }
+    </blockquote>
+    <p>Now, add this to the bottom of the class:</p>
+    <blockquote>
+        Example.propTypes = {<br>
+        &emsp; name: PropTypes.string<br>
+        };
+    </blockquote>
+    <p>String is far from the only type that prop types will recognize. Array, func, bool, number, object, symbol, node,
+        element, elementType, and instance are all supported. Another cool thing you could do is have default values for
+        props in case nothing is passed when the component is created:</p>
+    <blockquote>
+        Example.defaultProps = {<br>
+            &emsp;  name: 'Default name!'<br>
+          };
+    </blockquote>
+    <p>https://www.npmjs.com/package/prop-types<br>https://www.geeksforgeeks.org/reactjs-proptypes/</p>
+    <a class="symbol" href="../index.html">
+        <h3>&lt; Return</h3>
+    </a>
+</body>
+
+</html>
