@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="week8.css">
+</head>
+
+<body>
+    <h1 class="post_title">React Styled Components</h1>
+    <p class="post_subtitle">Week 9, 12/02/2021</p>
+    <p>This week I decided to look into styled-components for react. It is a library for react that integrates CSS into
+        .JS files. It has some behind the scenes optimizations from what I
+        read, but I like it because of the simplicity it provides in not having to link CSS files all the time. It is
+        also a fairly popular library.</p>
+    <p>To install it, type the following into a terminal opened to your project directory:</p>
+    <blockquote>npm install styled-components</blockquote>
+    <p>Then, in any .js file you use styled components in, simply import it like so:</p>
+    <blockquote>import styled from 'styled-components';</blockquote>
+    <p>Here is an example in code:</p>
+    <blockquote>
+        const customH1 = styled.h1`<br>
+        &emsp;color: blue;<br>
+        `
+    </blockquote>
+    <p>The custome styled components are declared like any other variable, and are flexible in that any valid CSS code
+        writen between the ` symbols will be applied to the object. The h1, in "styled.h1", is simply an HTML tag. It
+        can be replaced with div, p, h2, and etc.</p>
+    <p>Now, somewhere lower in the file, you can type the following to use your custom styled-component.</p>
+    <blockquote>
+        &lt;customH1&gt;*SOME TEXT*&lt;/customH1&gt;
+    </blockquote>
+    <p>My favorite feature of styled components is that it allows for JS to be inserted into CSS, and not just the other
+        way around. Here is an example:</p>
+    <blockquote>
+        const customH1 = styled.h1`<br>
+        &emsp;color: ${props.color};<br>
+        `
+    </blockquote>
+    <p>https://blog.logrocket.com/using-styled-components-in-react/<br>
+        https://scalablecss.com/styled-components-quickstart-guide/#styled-components-overview<br>
+        https://react.school/styled-components
+    </p>
+    <a class="symbol" href="../index.html">
+        <h3>&lt; Return</h3>
+    </a>
+</body>
+
+</html>
